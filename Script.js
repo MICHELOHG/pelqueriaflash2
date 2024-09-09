@@ -177,6 +177,83 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const target = document.querySelector("#cuerpo2-contenedor1-d3-s1");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Ajusta según sea necesario
+  };
+
+  // Función de callback para el Intersection Observer
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible"); // Añadir clase visible cuando está en el viewport
+      } else {
+        entry.target.classList.remove("visible"); // Eliminar clase visible cuando no está en el viewport
+      }
+    });
+  };
+
+  // Crear el Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+  // Observar el elemento #cuerpo2-contenedor
+  if (target) {
+    observer.observe(target);
+  }
+});
+
+
+
+
+
+
+
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const target = document.querySelector("#cuerpo2-contenedor1-d3-s1");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Ajusta según sea necesario
+  };
+
+  // Función de callback para el Intersection Observer
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible"); // Añadir clase visible cuando está en el viewport
+      } else {
+        entry.target.classList.remove("visible"); // Eliminar clase visible cuando no está en el viewport
+      }
+    });
+  };
+
+  // Crear el Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+  // Observar el elemento #cuerpo2-contenedor
+  if (target) {
+    observer.observe(target);
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 // script.js

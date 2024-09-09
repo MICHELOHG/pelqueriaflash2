@@ -222,6 +222,17 @@
     margin-bottom: 1.5REM;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 #cuerpo2-contenedor1-d3-s1 img{
     margin-right: 1rem;
 }
@@ -1065,6 +1076,18 @@
         line-height: 1rem;
         font-size: 1rem;}
 
+
+        #c82-servicio {
+            line-height: 1rem !important;
+            font-size: 1rem;}
+    
+
+            
+            #c83-servicio {
+                line-height: 1rem;
+                font-size: 1rem;}
+        
+        
 
 
         #c82-servicio {
